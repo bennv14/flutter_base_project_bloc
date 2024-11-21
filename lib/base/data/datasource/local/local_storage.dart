@@ -16,4 +16,9 @@ class LocalStorage {
 
   late final SharedPreferences _prefs;
   late final FlutterSecureStorage _secureStorage;
+
+  Future<void> clearAllData() async {
+    await _prefs.clear();
+    await _secureStorage.deleteAll();
+  }
 }
