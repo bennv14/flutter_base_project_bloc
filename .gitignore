@@ -38,6 +38,7 @@ pubspec.lock
 *.gr.dart
 lib/l10n/generated/intl/messages_all.dart
 lib/l10n/generated/intl/messages_en.dart
+pubspec.lock
 
 # Symbolication related
 app.*.symbols

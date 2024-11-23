@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:dio/dio.dart';
 import 'package:flutter_base_project_riverpod/l10n/generated/l10n.dart';
 
@@ -10,6 +8,7 @@ enum AppExceptionType {
   timeout,
   unauthorized,
   appError,
+  appException
 }
 
 class AppException implements Exception, Error {
@@ -38,6 +37,26 @@ class AppException implements Exception, Error {
       S.current.error,
       error: error,
       headerCode: null,
+      stackTrace: error.stackTrace,
+    );
+  }
+
+  factory AppException.fromException(Exception exception) {
+    return AppException(
+      AppExceptionType.appException,
+      S.current.error,
+      error: exception,
+      headerCode: null,
+      stackTrace: null,
+    );
+  }
+
+  factory AppException.fromDioException(DioException error) {
+    return AppException(
+      AppExceptionType.network,
+      S.current.error,
+      error: error,
+      headerCode: error.response?.statusCode,
       stackTrace: error.stackTrace,
     );
   }
