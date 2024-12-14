@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_base_project_riverpod/l10n/generated/l10n.dart';
+import 'package:flutter_base_project_bloc/l10n/generated/l10n.dart';
 
 enum AppExceptionType {
   unknown,

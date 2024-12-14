@@ -1,4 +1,4 @@
-# flutter_base_project_riverpod
+# flutter_base_project_bloc
 
 A new Flutter project.
 
