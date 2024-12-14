@@ -36,6 +36,9 @@ pubspec.lock
 *.g.dart
 *.gen.dart
 *.gr.dart
+*.freezed.dart
+
+# Flutter localization
 lib/l10n/generated/intl/messages_all.dart
 lib/l10n/generated/intl/messages_en.dart
 pubspec.lock

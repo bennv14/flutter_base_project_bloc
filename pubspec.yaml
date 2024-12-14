@@ -39,17 +39,22 @@ dependencies:
   logger: ^2.5.0
 
   # widget
-  flutter_svg: ^2.0.14
+  flutter_svg: ^2.0.16
   cached_network_image: ^3.4.1
   flutter_native_splash: ^2.4.2
   cupertino_icons: ^1.0.8
 
   # utils
-  get_it: ^8.0.2
   envied: ^1.0.0
+  freezed_annotation: ^2.4.1
 
   # lint
   custom_lint: ^0.7.0
+
+  #dependency injection
+  get_it: ^8.0.3
+
+  # router
   auto_route: ^9.2.2
 
 dev_dependencies:
@@ -66,18 +71,19 @@ dev_dependencies:
   envied_generator: ^1.0.0
   flutter_gen_runner: ^5.8.0
   auto_route_generator: ^9.0.0
+  freezed: ^2.5.7
 
 flutter:
   uses-material-design: true
 
 flutter_intl:
   enabled: true
-  arb_dir: lib/l10n
-  output_dir: lib/l10n/generated
+  arb_dir: lib/generated/l10n
+  output_dir: lib/generated/l10n/l10n_gen
   main_locale: en
 
 flutter_gen:
-  output: lib/utils/gen
+  output: lib/generated/assets
   integrations:
     flutter_svg: true
 
