@@ -13,8 +13,8 @@ dependencies:
     sdk: flutter
 
   # state
-  bloc: ^8.1.4
-  flutter_bloc: ^8.1.6
+  bloc: ^9.0.0
+  flutter_bloc: ^9.0.0
 
   # localization
   intl_utils: ^2.8.7
@@ -53,9 +53,10 @@ dependencies:
   # router
   auto_route: ^9.3.0+1
 
-  # serialization
+  # object
   json_annotation: ^4.9.0
   freezed_annotation: ^2.4.4
+  equatable: ^2.0.7
 
 dev_dependencies:
   flutter_test:
@@ -89,12 +90,12 @@ flutter:
 
 flutter_intl:
   enabled: true
-  arb_dir: lib/l10n
-  output_dir: lib/l10n/generated
+  arb_dir: lib/generated
+  output_dir: lib/generated
   main_locale: en
 
 flutter_gen:
-  output: lib/utils/gen
+  output: lib/generated
   integrations:
     flutter_svg: true
 
