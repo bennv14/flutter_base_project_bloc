@@ -10,7 +10,6 @@ part 'generated/modified_model.g.dart';
 class ModifiedModel extends ModifiedEntity with _$ModifiedModel {
   const factory ModifiedModel({
     @JsonKey(name: 'time') required DateTime time,
-    @JsonKey(name: 'contents') required String content,
   }) = _ModifiedModel;
 
   factory ModifiedModel.fromJson(Map<String, dynamic> json) =>

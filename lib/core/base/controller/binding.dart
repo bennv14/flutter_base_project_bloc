@@ -1,3 +1,4 @@
 abstract class Binding {
-  Future<void> init();
+  Future<void> dependencies()async{}
+  Future<void> dispose()async{}
 }

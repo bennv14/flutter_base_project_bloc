@@ -12,9 +12,9 @@ class FilmModel extends FilmEntity with _$FilmModel {
     @JsonKey(name: '_id') required String id,
     @JsonKey(name: 'name') required String name,
     @JsonKey(name: 'slug') required String slug,
-    @JsonKey(name: 'originName') required String originName,
-    @JsonKey(name: 'posterUrl') required String posterUrl,
-    @JsonKey(name: 'thumbUrl') required String thumbUrl,
+    @JsonKey(name: 'origin_name') required String originName,
+    @JsonKey(name: 'poster_url') required String posterUrl,
+    @JsonKey(name: 'thumb_url') required String thumbUrl,
     @JsonKey(name: 'year') required int year,
   }) = _FilmModel;
 

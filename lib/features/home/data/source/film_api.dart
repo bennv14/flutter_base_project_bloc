@@ -6,11 +6,16 @@ import 'package:retrofit/retrofit.dart';
 
 part 'generated/film_api.g.dart';
 
-@RestApi(baseUrl: 'https://phimapi.com')
+@RestApi()
 abstract class FilmApi {
-  factory FilmApi(Dio dio, {String baseUrl}) = _FilmApi;
+  factory FilmApi(
+    Dio dio, {
+    String? baseUrl,
+    ParseErrorLogger? errorLogger,
+  }) = _FilmApi;
 
   @GET('/danh-sach/phim-moi-cap-nhat')
-  Future<BaseResponse<List<FilmModel>>> getNewsFilm([@Query('page') int? page]);
-
+  Future<BaseResponse<List<FilmModel>>> getNewsFilm(
+    @Query('page') int? page,
+  );
 }

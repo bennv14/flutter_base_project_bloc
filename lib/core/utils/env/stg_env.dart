@@ -1,3 +1,3 @@
-import 'package:flutter_base_project_bloc/utils/env/base_env.dart';
+import 'package:flutter_base_project_bloc/core/utils/env/base_env.dart';
 
 class StgEnv implements BaseEnv {}

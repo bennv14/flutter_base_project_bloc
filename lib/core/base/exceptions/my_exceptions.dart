@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_base_project_bloc/base/exceptions/my_dio_exceptions.dart';
+import 'package:flutter_base_project_bloc/core/base/exceptions/my_dio_exceptions.dart';
 
 class MyExceptions implements Exception {
   final String message;
