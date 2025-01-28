@@ -4,7 +4,7 @@ import 'package:flutter_base_project_bloc/core/common/dio_builder/dio_type.dart'
 import 'package:flutter_base_project_bloc/core/common/dio_builder/interceptors/logger_interceptor.dart';
 import 'package:flutter_base_project_bloc/core/common/dio_builder/retrofit_parse_error.dart';
 import 'package:flutter_base_project_bloc/di/app_binding.dart';
-import 'package:flutter_base_project_bloc/features/home/data/source/film_api.dart';
+import 'package:flutter_base_project_bloc/features/demo_base_screen/data/source/film_api.dart';
 import 'package:retrofit/error_logger.dart';
 
 class ApiBiding extends Binding {
