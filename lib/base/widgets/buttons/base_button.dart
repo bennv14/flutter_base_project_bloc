@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_base_project_bloc/utils/gen/colors.gen.dart';
+import 'package:flutter_base_project_bloc/generated/colors.gen.dart';
 
 class BaseButton extends StatefulWidget {
   const BaseButton({

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_base_project_bloc/generated/colors.gen.dart';
 import 'package:flutter_base_project_bloc/routes/app_router.dart';
-import 'package:flutter_base_project_bloc/utils/gen/colors.gen.dart';
-
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
@@ -9,12 +8,9 @@ class MyApp extends StatefulWidget {
   State<MyApp> createState() => _MyAppState();
 }
 
-void getFilmList() {}
-
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    getFilmList();
     final AppRouter appRouter = AppRouter();
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
