@@ -1,0 +1,104 @@
+name: flutter_base_project_bloc
+description: "A base project for Flutter."
+
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 0.0.0+1
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # state
+  bloc: ^9.0.0
+  flutter_bloc: ^9.0.0
+
+  # localization
+  intl_utils: ^2.8.7
+  intl: ^0.19.0
+  flutter_localizations:
+    sdk: flutter
+
+  # storage
+  shared_preferences: ^2.4.0
+  path_provider: ^2.1.1
+  file_picker: ^8.1.7
+  flutter_secure_storage: ^9.2.4
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # network
+  dio: ^5.7.0
+  retrofit: ^4.4.2
+
+  # logger
+  logger: ^2.5.0
+
+  # widget
+  flutter_svg: ^2.0.17
+  cached_network_image: ^3.4.1
+  flutter_native_splash: ^2.4.2
+  cupertino_icons: ^1.0.8
+
+  # utils
+  get_it: ^8.0.3
+  envied: ^1.0.0
+
+  # lint
+  custom_lint: ^0.7.0
+
+  # router
+  auto_route: ^9.3.0+1
+
+  # object
+  json_annotation: ^4.9.0
+  freezed_annotation: ^2.4.4
+  equatable: ^2.0.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # code gen
+  build_runner: ^2.4.14
+  flutter_gen_runner: ^5.8.0
+
+  # serialization
+  freezed: ^2.5.7
+  json_serializable: ^6.8.0
+
+  # lint
+  flutter_lints: ^5.0.0
+
+  # hive
+  hive_generator: ^2.0.1
+
+  # retrofit
+  retrofit_generator: ^9.1.7
+
+  # env
+  envied_generator: ^1.0.0
+
+  # router
+  auto_route_generator: ^9.0.0
+
+flutter:
+  uses-material-design: true
+
+flutter_intl:
+  enabled: true
+  arb_dir: lib/generated
+  output_dir: lib/generated
+  main_locale: en
+
+flutter_gen:
+  output: lib/generated
+  integrations:
+    flutter_svg: true
+
+  colors:
+    inputs:
+      - assets/colors/colors.xml

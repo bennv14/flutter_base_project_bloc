@@ -1,0 +1,16 @@
+{
+  "@@locale": "en",
+  "not_found": "Not Found",
+  "error": "Error",
+  "bad_request": "Bad Request",
+  "unauthorized": "Unauthorized",
+  "server_error": "Server Error",
+  "invalid_input": "Invalid Input",
+  "param_error": "Param Error",
+  "token_error": "Token Error",
+  "fail": "Fail",
+  "verify_error": "Verify Error",
+  "connection_timeout": "Connection Timeout",
+  "ok": "OK",
+  "unknown_error": "Unknown Error"
+}

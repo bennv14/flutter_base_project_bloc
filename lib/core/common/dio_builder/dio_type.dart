@@ -1,0 +1,4 @@
+enum DioType {
+  token,
+  normal,
+}
