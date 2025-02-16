@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_base_project_bloc/features/widgets/loading/base_loading.dart';
 
-class BaseLoadingScreen extends StatelessWidget {
-  const BaseLoadingScreen({super.key, this.isLoading = false});
+class OverlayLoading extends StatelessWidget {
+  const OverlayLoading({super.key, this.isLoading = false});
 
   final bool isLoading;
 
